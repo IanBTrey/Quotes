@@ -15,14 +15,15 @@ export class QuotesComponent implements OnInit {
     new Quotes(4,"The times when everything seemed broken,I came out better.","Author:Shina Leboo","Aggie Mark",0,0,new Date(2019,4,27)),
     new Quotes(5,"Unless the lions have their own historians,the hunter will always be glorified.","Author:Cleophas Tirop","Tirop family",0,0,new Date(2019,4,28)),
     new Quotes(6,"Since the hunters have learnt to shoot without missing,birds should learn to fly without perching.","Author:Chinua Achebe","Brian Kibet",0,0,new Date(2019,4,29)),
-    new Quotes(7,"We are our own devils and make this world our hell.","Author:Oscar Wilde.","Tony Stark",0,0,new Date(2019,4,29)),
-    new Quotes(8,"Have a heart that never hardens,a temper that never tires,a touch that never hurts.","Author:Charles Dickens","kipkelesek",0,0,new Date(2019,4,30)),
-    new Quotes(9,"Tact is the knack of making a point without making an enemy.","Author:Isaac Newton","Kipsamaek",0,0,new Date(2019,5,1)),
-    new Quotes(10,"While I breathe,I hope.","Author:Theocritus and Cicero","Ian Brian",0,0,new Date(2019,5,2)),
+    new Quotes(7,"We are our own devils and make this world our hell.","Author:Oscar Wilde.","Tony Stark",0,0,new Date(2019,4,30)),
+    new Quotes(8,"Have a heart that never hardens,a temper that never tires,a touch that never hurts.","Author:Charles Dickens","kipkelesek",0,0,new Date(2019,4,1)),
+    new Quotes(9,"Tact is the knack of making a point without making an enemy.","Author:Isaac Newton","Kipsamaek",0,0,new Date(2019,5,2)),
+    new Quotes(10,"While I breathe,I hope.","Author:Theocritus and Cicero","Ian Brian",0,0,new Date(2019,5,23)),
   ]
+
   toogleDetails(index){
     this.quotess[index].showAuthor = !this.quotess[index].showAuthor;
-    this.quotess[index].showSubmit= !this.quotess[index].showSubmit;
+    this.quotess[index].showSubmit = !this.quotess[index].showSubmit;
   }
   upvote(index){
     this.quotess[index].upvotes++;

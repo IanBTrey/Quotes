@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Quote} from '../quotes';
+import {Quotes} from '../quotes';
 
 @Component({
   selector: 'app-quotes',
@@ -19,7 +19,7 @@ export class QuotesComponent implements OnInit {
     new Quotes(8,"Have a heart that never hardens,a temper that never tires,a touch that never hurts.","Author:Charles Dickens","kipkelesek",0,0,new Date(2019,4,30)),
     new Quotes(9,"Tact is the knack of making a point without making an enemy.","Author:Isaac Newton","Kipsamaek",0,0,new Date(2019,5,1)),
     new Quotes(10,"While I breathe,I hope.","Author:Theocritus and Cicero","Ian Brian",0,0,new Date(2019,5,2)),
-  ];
+  ]
   toogleDetails(index){
     this.quotess[index].showAuthor = !this.quotess[index].showAuthor;
     this.quotess[index].showSubmit= !this.quotess[index].showSubmit;

@@ -8,7 +8,7 @@
    <div class="row">
 <ul>
     <div *ngFor='let quotes of quotess;let i = index'>
-        <li id="{{i}}" appStrikethrough>{{quotes.name}}due on {{quotes.completeDate|date}}</li>
+       <li id="{{i}}" appStrikethrough>{{quotes.name}}due on {{quotes.completeDate|date}}</li>
         <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
 
         &nbsp;&nbsp;
